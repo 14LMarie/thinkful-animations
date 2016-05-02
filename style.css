@@ -1,9 +1,25 @@
 /* Styles go here */
 
+body {
+    font-family: sans-serif;
+}
+
+.wrapper {
+    width: 70%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 1.1rem;
+}
+
 .loading {
     width: 300px;
     height: 50px;
     border: 1px solid #000;
+    margin: 8rem auto;
 }
 
 .loading .inner {
@@ -14,10 +30,15 @@
 
 .loading:hover .inner {
     -webkit-animation: slide 2s infinite alternate;
+    -webkit-animation: slide 2s infinite alternate;
+    -moz-animation: slide 2s infinite alternate;
+    -ms-animation: slide 2s infinite alternate;
+    -o-animation: slide 2s infinite alternate;
+    animation: slide 2s infinite alternate;
 }
 
 @-webkit-keyframes slide {
-    from {
+    0% {
         background-color: blue;
         margin-left: 0px;
     }
@@ -30,7 +51,87 @@
     60% {
         background-color: orange;
     }
-    to {
+    0% {
+        background-color: green;
+        margin-left: 80%;
+    }
+}
+
+@-moz-keyframes slide {
+    0% {
+        background-color: blue;
+        margin-left: 0px;
+    }
+    20% {
+        background-color: purple;
+    }
+    40% {
+        background-color: red;
+    }
+    60% {
+        background-color: orange;
+    }
+    0% {
+        background-color: green;
+        margin-left: 80%;
+    }
+}
+
+@-ms-keyframes slide {
+    0% {
+        background-color: blue;
+        margin-left: 0px;
+    }
+    20% {
+        background-color: purple;
+    }
+    40% {
+        background-color: red;
+    }
+    60% {
+        background-color: orange;
+    }
+    0% {
+        background-color: green;
+        margin-left: 80%;
+    }
+}
+
+@-o-keyframes slide {
+    0% {
+        background-color: blue;
+        margin-left: 0px;
+    }
+    20% {
+        background-color: purple;
+    }
+    40% {
+        background-color: red;
+    }
+    60% {
+        background-color: orange;
+    }
+    0% {
+        background-color: green;
+        margin-left: 80%;
+    }
+}
+
+@keyframes slide {
+    0% {
+        background-color: blue;
+        margin-left: 0px;
+    }
+    20% {
+        background-color: purple;
+    }
+    40% {
+        background-color: red;
+    }
+    60% {
+        background-color: orange;
+    }
+    0% {
         background-color: green;
         margin-left: 80%;
     }
@@ -43,7 +144,7 @@
     border-radius: 50%;
     margin-top: 30px;
     margin-left: -130px;
-    position: absolute;
+    position: relative;
     z-index: 9999;
     background-color: lightblue;
 }
@@ -61,11 +162,135 @@
 
 .middle:hover .round {
     -webkit-animation: rotate 10s infinite;
+    -moz-animation: rotate 10s infinite;
+    -ms-animation: rotate 10s infinite;
+    -o-animation: rotate 10s infinite;
+    animation: rotate 10s infinite;
     -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-animation: rotate(360deg);
+    -o-animation: rotate(360deg);
+    transform: rotate(360deg);
     -webkit-transform-origin: 50%, 50%;
+    -moz-transform-origin: 50%, 50%;
+    -ms-transform-origin: 50%, 50%;
+    -o-transform-origin: 50%, 50%;
+    transform-origin: 50%, 50%;
 }
 
 @-webkit-keyframes rotate {
+    0% {
+        top: 0px;
+        left: 0px;
+        background-color: lightblue;
+    }
+    25% {
+        top: -165px;
+        left: 165px;
+        background-color: orange;
+    }
+    50% {
+        top: -335px;
+        left: 0px;
+        background-color: green;
+    }
+    75% {
+        top: -165px;
+        left: -175px;
+        background-color: yellow;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        background-color: lightblue;
+    }
+}
+
+@-moz-keyframes rotate {
+    0% {
+        top: 0px;
+        left: 0px;
+        background-color: lightblue;
+    }
+    25% {
+        top: -165px;
+        left: 165px;
+        background-color: orange;
+    }
+    50% {
+        top: -335px;
+        left: 0px;
+        background-color: green;
+    }
+    75% {
+        top: -165px;
+        left: -175px;
+        background-color: yellow;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        background-color: lightblue;
+    }
+}
+
+@-ms-keyframes rotate {
+    0% {
+        top: 0px;
+        left: 0px;
+        background-color: lightblue;
+    }
+    25% {
+        top: -165px;
+        left: 165px;
+        background-color: orange;
+    }
+    50% {
+        top: -335px;
+        left: 0px;
+        background-color: green;
+    }
+    75% {
+        top: -165px;
+        left: -175px;
+        background-color: yellow;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        background-color: lightblue;
+    }
+}
+
+@-o-keyframes rotate {
+    0% {
+        top: 0px;
+        left: 0px;
+        background-color: lightblue;
+    }
+    25% {
+        top: -165px;
+        left: 165px;
+        background-color: orange;
+    }
+    50% {
+        top: -335px;
+        left: 0px;
+        background-color: green;
+    }
+    75% {
+        top: -165px;
+        left: -175px;
+        background-color: yellow;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+        background-color: lightblue;
+    }
+}
+
+@keyframes rotate {
     0% {
         top: 0px;
         left: 0px;
