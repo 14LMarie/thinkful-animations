@@ -1,0 +1,122 @@
+/* Styles go here */
+
+.loading {
+    width: 300px;
+    height: 50px;
+    border: 1px solid #000;
+}
+
+.loading .inner {
+    width: 20%;
+    height: 100%;
+    background-color: #00F;
+}
+
+.loading:hover .inner {
+    -webkit-animation: slide 2s infinite alternate;
+}
+
+@-webkit-keyframes slide {
+    from {
+        background-color: blue;
+        margin-left: 0px;
+    }
+    20% {
+        background-color: purple;
+    }
+    40% {
+        background-color: red;
+    }
+    60% {
+        background-color: orange;
+    }
+    to {
+        background-color: green;
+        margin-left: 80%;
+    }
+}
+
+.round {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: -130px;
+    position: relative;
+}
+
+.middle {
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 50%;
+    top: 300px;
+    left: 300px;
+    position: absolute;
+}
+
+.middle:hover .round {
+    -webkit-animation: rotate 200s infinite;
+    -webkit-transform: rotate(360deg);
+    -webkit-transform-origin: 10%, 10%;
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        top: 0px;
+        left: 0px;
+        background-color: blue;
+    }
+    /*10% {
+        top: -30px;
+        left: 30px;
+        background-color: purple;
+    }*/
+    25% {
+        top: -60px;
+        left: 60px;
+        background-color: red;
+    }
+    /*30% {
+        top: -90px;
+        left: 90px;
+        background-color: orange;
+    }
+    40% {
+        top: -110px;
+        left: 20px;
+        background-color: yellow;
+    }*/
+    50% {
+        top: -115px;
+        left: 0px;
+        background-color: gray;
+    }
+    /*60% {
+        top: -100px;
+        left: -40px;
+        background-color: black;
+    }*/
+    75% {
+        top: -70px;
+        left: -60px;
+        background-color: white;
+    }
+    /*80% {
+        top: -40px;
+        left: -60px;
+        background-color: green;
+    }
+    90% {
+        top: -20px;
+        left: -45px;
+        background-color: red;
+    }*/
+    100% {
+        top: 0px;
+        left: -20px;
+        background-color: yellow;
+    }
+}
