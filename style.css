@@ -30,7 +30,6 @@ h1 {
 
 .loading:hover .inner {
     -webkit-animation: slide 2s infinite alternate;
-    -webkit-animation: slide 2s infinite alternate;
     -moz-animation: slide 2s infinite alternate;
     -ms-animation: slide 2s infinite alternate;
     -o-animation: slide 2s infinite alternate;
@@ -42,16 +41,16 @@ h1 {
         background-color: blue;
         margin-left: 0px;
     }
-    20% {
+    25% {
         background-color: purple;
     }
-    40% {
+    50% {
         background-color: red;
     }
-    60% {
+    75% {
         background-color: orange;
     }
-    0% {
+    100% {
         background-color: green;
         margin-left: 80%;
     }
@@ -62,16 +61,16 @@ h1 {
         background-color: blue;
         margin-left: 0px;
     }
-    20% {
+    25% {
         background-color: purple;
     }
-    40% {
+    50% {
         background-color: red;
     }
-    60% {
+    75% {
         background-color: orange;
     }
-    0% {
+    100% {
         background-color: green;
         margin-left: 80%;
     }
@@ -82,16 +81,16 @@ h1 {
         background-color: blue;
         margin-left: 0px;
     }
-    20% {
+    25% {
         background-color: purple;
     }
-    40% {
+    50% {
         background-color: red;
     }
-    60% {
+    75% {
         background-color: orange;
     }
-    0% {
+    100% {
         background-color: green;
         margin-left: 80%;
     }
@@ -102,16 +101,16 @@ h1 {
         background-color: blue;
         margin-left: 0px;
     }
-    20% {
+    25% {
         background-color: purple;
     }
-    40% {
+    50% {
         background-color: red;
     }
-    60% {
+    75% {
         background-color: orange;
     }
-    0% {
+    100% {
         background-color: green;
         margin-left: 80%;
     }
@@ -122,16 +121,16 @@ h1 {
         background-color: blue;
         margin-left: 0px;
     }
-    20% {
+    25% {
         background-color: purple;
     }
-    40% {
+    50% {
         background-color: red;
     }
-    60% {
+    75% {
         background-color: orange;
     }
-    0% {
+    100% {
         background-color: green;
         margin-left: 80%;
     }
