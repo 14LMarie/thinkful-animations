@@ -1,7 +1,32 @@
 /* More details about CSS3 animations and compatibility can be found here http://www.w3schools.com/css/css3_animations.asp */
 
+
+/* -------------------------------------
+CSS reset
+(all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+    box-sizing: border-box;
+    /*reset Chrome user agent styles*/
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-padding-end: 0px;
+}
+
 body {
     font-family: sans-serif;
+    font-size: 20px;
 }
 
 .wrapper {
@@ -11,27 +36,35 @@ body {
     margin-right: auto;
 }
 
-h1 {
-    font-size: 1.1rem;
+h2 {
+    font-size: 1.5rem;
 }
 
-.loading {
+
+/*
+--------------------------------------------------------------------------------------
+starting the slide animation
+*/
+
+.slider-wrapper {
     width: 300px;
     height: 50px;
     border: 1px solid #000;
     margin: 8rem auto;
 }
 
-.loading .inner {
+.slider-wrapper .slider-inner-square {
     width: 20%;
     height: 100%;
     background-color: #00F;
 }
 
 
-/* The element to apply the animation to */
+/* The element to apply the animation to
+(the animation TRIGER) */
 
-.loading:hover .inner {
+.slider-wrapper:hover .slider-inner-square {
+    /* The animation SETTINGS */
     /*Safari / Chrome compatibility*/
     -webkit-animation: slide 2s infinite alternate;
     /*Firefox compatibility*/
@@ -44,7 +77,7 @@ h1 {
 }
 
 
-/* The animation code */
+/* The animation code (definind the START, the END and any of the MIDDLE points) */
 
 
 /*Safari / Chrome compatibility*/
@@ -158,10 +191,16 @@ h1 {
     }
 }
 
-.round {
+
+/*
+--------------------------------------------------------------------------------------
+starting the circular animation
+*/
+
+.outer-big-circle {
     width: 300px;
     height: 300px;
-    border: 3px solid black;
+    border: 3px dashed black;
     border-radius: 50%;
     position: relative;
     z-index: 9999;
@@ -170,7 +209,7 @@ h1 {
     background-color: lightblue;
 }
 
-.middle {
+.inner-small-circle {
     width: 30px;
     height: 30px;
     border: 3px solid black;
@@ -182,27 +221,29 @@ h1 {
 }
 
 
-/* The element to apply the animation to */
+/* The element to apply the animation to
+(the animation TRIGER) */
 
-.middle:hover .round {
+.inner-small-circle:hover .outer-big-circle {
+    /* The animation SETTINGS */
     /*Safari / Chrome compatibility*/
-    -webkit-animation: rotate 5s infinite;
+    -webkit-animation: rotate 10s infinite;
     /*Firefox compatibility*/
-    -moz-animation: rotate 5s infinite;
+    -moz-animation: rotate 10s infinite;
     /*Internet Explorer compatibility*/
-    -ms-animation: rotate 5s infinite;
+    -ms-animation: rotate 10s infinite;
     /*Opera compatibility*/
-    -o-animation: rotate 5s infinite;
-    animation: rotate 5s infinite;
+    -o-animation: rotate 10s infinite;
+    animation: rotate 10s infinite;
     /*Safari / Chrome compatibility*/
-    -webkit-transform: rotate(360deg);
+    -webkit-transform: rotate(90deg);
     /*Firefox compatibility*/
-    -moz-transform: rotate(360deg);
+    -moz-transform: rotate(90deg);
     /*Internet Explorer compatibility*/
-    -ms-animation: rotate(360deg);
+    -ms-animation: rotate(90deg);
     /*Opera compatibility*/
-    -o-animation: rotate(360deg);
-    transform: rotate(360deg);
+    -o-animation: rotate(90deg);
+    transform: rotate(90deg);
     /*Safari / Chrome compatibility*/
     -webkit-transform-origin: 50%, 50%;
     /*Firefox compatibility*/
@@ -215,7 +256,7 @@ h1 {
 }
 
 
-/* The animation code */
+/* The animation code (definind the START, the END and any of the MIDDLE points) */
 
 
 /*Safari / Chrome compatibility*/
